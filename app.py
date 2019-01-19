@@ -5,9 +5,11 @@ import os
 app = Flask(__name__, static_url_path='/static')
 
 DB_FILE = "database.json"
+BLANK_SCHEMA = "schema.json"
 HTML_TEMPLATE = "template.html"
 PARAMETERS_IN_INFO = ["problem_type", "description", "example", "additional_resources", "image_url"]
 LIST_OBJECTS = ["additional_resources", "image_url", "example"]
+LESSON_DATA = ["title", "color1", "color2"]
 # This is not really a good way of doing this, but I'll try to change this up later
 
 if os.path.exists(DB_FILE) == False:
@@ -23,7 +25,7 @@ def add_problem_to_file(problemType, data):
 	a = json.load(open(DB_FILE))
 	a[problemType] = data
 	with open(DB_FILE, 'w') as outfile:
-		json.dump(a, outfile)
+		json.dump(a, outfile, indent=4)
 
 def modify_problem(problemType, param, data):
 	# This means the field had text before submission
@@ -37,7 +39,7 @@ def modify_problem(problemType, param, data):
 		else:
 			a[problemType][param] = val
 	with open(DB_FILE, 'w') as outfile:
-		json.dump(a, outfile)
+		json.dump(a, outfile, indent=4)
 
 def get_problem_type_info(problemType):
 	problemType = problemType.lower()
@@ -49,7 +51,6 @@ def get_problem_type_info(problemType):
 @app.route('/', methods=['GET'])
 def index():
 	return render_template("index.html", params=PARAMETERS_IN_INFO)
-
 
 @app.route('/addNewProblem', methods=['POST'])
 def add_problem():
@@ -69,6 +70,15 @@ def add_problem():
 		# Adds the inputted problem to a file
 	return ('', 204)
 
+@app.route("/lessons/<username>", methods=["GET"])
+def get_lessons(username):
+	username = username.lower()
+	DB = json.load(open(DB_FILE))
+	if username in DB:
+		return jsonify(DB[username])
+	else:
+		return jsonify([])
+
 @app.route('/update', methods=['POST'])
 def update_problem():
 	problem_type = request.form.get('problem_type', None)
@@ -86,8 +96,35 @@ def update_problem():
 					else:
 						a[problemType][param] = val
 				with open(DB_FILE, 'w') as outfile:
-					json.dump(a, outfile)
+					json.dump(a, outfile, indent=4)
 	return ('', 204)
+
+@app.route('/addUser', methods=['POST'])
+def add_user():
+	username = request.form.get('username', None)
+	if username != None:
+		create_db_backup()
+		a = json.load(open(DB_FILE))
+		a[username] = {"lessons": []}
+		with open(DB_FILE, 'w') as outfile:
+			json.dump(a, outfile, indent=4)
+	return ('', 204)
+
+@app.route('/addLesson', methods=['POST'])
+def add_lesson():
+	allData = request.json
+	username = allData.get('userName', None)
+	info = {}
+	if username != None and 'lessons' in allData:
+		create_db_backup()
+		a = json.load(open(DB_FILE))
+		if username in a:
+			a[username]['lessons'].append(allData['lessons'])
+			with open(DB_FILE, 'w') as outfile:
+				json.dump(a, outfile, indent=4)
+	return ('', 204)
+
+
 
 @app.route('/guide/<problemType>', methods=['GET'])
 def get_guide(problemType):
