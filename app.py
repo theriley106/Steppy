@@ -75,7 +75,7 @@ def get_lessons(username):
 	username = username.lower()
 	DB = json.load(open(DB_FILE))
 	if username in DB:
-		return jsonify(DB[username]['lessons'])
+		return jsonify([x[0] for x in DB[username]['lessons']])
 	else:
 		return jsonify([])
 
