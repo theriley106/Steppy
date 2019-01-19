@@ -28,10 +28,12 @@ def modify_problem(problemType, param, data):
 	# This means the field had text before submission
 	create_db_backup()
 	a = json.load(open(DB_FILE))
-	a[problemType] = data
-	if param in LIST_OBJECTS:
-
-
+	val = request.form.get(param, None)
+	if val != None and param in a[problemType]:
+		if param in LIST_OBJECTS:
+			a[problemType][param].append(val)
+		else:
+			a[problemType][param] = val
 	with open(DB_FILE, 'w') as outfile:
 		json.dump(a, outfile)
 
