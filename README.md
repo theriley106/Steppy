@@ -66,3 +66,18 @@ The database is a json file in the structure of:
       }, ...
 }
 ```
+
+
+### API Endpoints
+
+[GET] https://teamthomais.herokuapp.com/getGuideNames
+
+Returns:
+
+```json
+[
+  "Multiplication",
+  "Subtraction",
+  ...
+]
+```
