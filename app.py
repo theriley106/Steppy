@@ -96,7 +96,7 @@ def get_guide(problemType):
 	problem_info = get_problem_type_info(problemType)
 	if problem_info == None:
 		return "<h1>{} Does not exist</h1>".format(problemType)
-	return render_template("{}.html".format(problemType), info=problem_info, params=problem_info.keys())
+	return render_template("{}.html".format(problemType), info=problem_info, single_params=[x for x in problem_info.keys() if x not in LIST_OBJECTS], list_objects=LIST_OBJECTS)
 
 @app.route('/getGuideNames', methods=['GET'])
 def get_guide_names():
