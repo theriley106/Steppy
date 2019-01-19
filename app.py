@@ -74,6 +74,11 @@ def disable_cors(response):
 	response.headers.add('Access-Control-Allow-Origin', '*')
 	return response
 
+@app.route("/users", methods=["GET"])
+def get_users():
+	DB = json.load(open(DB_FILE))
+	return disable_cors(DB.keys())
+
 @app.route("/lessons/<username>", methods=["GET"])
 def get_lessons(username):
 	username = username.lower()
