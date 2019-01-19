@@ -38,7 +38,7 @@ def modify_problem(problemType, param, data):
 		json.dump(a, outfile)
 
 def get_problem_type_info(problemType):
-	return {'problem_type': problemType}
+	return json.load(open(DB_FILE))[problemType]
 
 @app.route('/', methods=['GET'])
 def index():
