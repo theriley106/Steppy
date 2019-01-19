@@ -18,6 +18,7 @@ def create_db_backup():
 
 def add_problem_to_file(problemType, data):
 	# This means the field had text before submission
+	problemType = problemType.lower()
 	create_db_backup()
 	a = json.load(open(DB_FILE))
 	a[problemType] = data
@@ -26,6 +27,7 @@ def add_problem_to_file(problemType, data):
 
 def modify_problem(problemType, param, data):
 	# This means the field had text before submission
+	problemType = problemType.lower()
 	create_db_backup()
 	a = json.load(open(DB_FILE))
 	val = request.form.get(param, None)
@@ -38,33 +40,19 @@ def modify_problem(problemType, param, data):
 		json.dump(a, outfile)
 
 def get_problem_type_info(problemType):
-	return json.load(open(DB_FILE))[problemType]
+	problemType = problemType.lower()
+	myJsonFile = json.load(open(DB_FILE))
+	if problemType not in myJsonFile:
+		return None
+	return myJsonFile[problemType]
 
 @app.route('/', methods=['GET'])
 def index():
 	return render_template("index.html", params=PARAMETERS_IN_INFO)
 
 
-'''@app.route('/addNewProblem', methods=['POST'])
+@app.route('/addNewProblem', methods=['POST'])
 def add_problem():
-	temp_dict = {}
-	# Dictionary holding new problem information
-	problem_type = request.form.get('problem_type', None)
-	# This is the problem/guide name
-	print request.form
-	if problem_type != None:
-		# This means the problem type was specified
-		for val in PARAMETERS_IN_INFO:
-			if val in LIST_OBJECTS:
-				temp_dict[val] = request.form.getlist(val)
-			else:
-				temp_dict[val] = request.form.get(val, None)
-		add_problem_to_file(problem_type, temp_dict)
-		# Adds the inputted problem to a file
-	return ('', 204)'''
-
-@app.route('/add/<problem_type>', methods=['POST'])
-def add_problem(problem_type):
 	temp_dict = {}
 	# Dictionary holding new problem information
 	problem_type = request.form.get('problem_type', None)
@@ -81,12 +69,34 @@ def add_problem(problem_type):
 		# Adds the inputted problem to a file
 	return ('', 204)
 
+"""@app.route('/add/<problem_type>', methods=['POST'])
+def add_problem(problem_type):
+	problemType = problemType.lower()
+	temp_dict = {}
+	# Dictionary holding new problem information
+	problem_type = request.form.get('problem_type', None)
+	# This is the problem/guide name
+	print request.form
+	if problem_type != None:
+		# This means the problem type was specified
+		for val in PARAMETERS_IN_INFO:
+			if val in LIST_OBJECTS:
+				temp_dict[val] = request.form.getlist(val)
+			else:
+				temp_dict[val] = request.form.get(val, None)
+		add_problem_to_file(problem_type, temp_dict)
+		# Adds the inputted problem to a file
+	return ('', 204)"""
+
 @app.route('/guide/<problemType>', methods=['GET'])
 def get_guide(problemType):
+	problemType = problemType.lower()
 	if os.path.exists("templates/{}.html".format(problemType)) == False:
 		os.system("cp templates/{} templates/{}.html".format(HTML_TEMPLATE, problemType))
 	problem_info = get_problem_type_info(problemType)
-	return render_template("{}.html".format(problemType), info=problem_info, mykeys=problem_info.keys())
+	if problem_info == None:
+		return "<h1>{} Does not exist</h1>".format(problemType)
+	return render_template("{}.html".format(problemType), info=problem_info, params=problem_info.keys())
 
 @app.route('/getGuideNames', methods=['GET'])
 def get_guide_names():
