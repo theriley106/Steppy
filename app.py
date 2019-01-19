@@ -70,14 +70,18 @@ def add_problem():
 		# Adds the inputted problem to a file
 	return ('', 204)
 
+def disable_cors(response):
+	response.headers.add('Access-Control-Allow-Origin', '*')
+	return response
+
 @app.route("/lessons/<username>", methods=["GET"])
 def get_lessons(username):
 	username = username.lower()
 	DB = json.load(open(DB_FILE))
 	if username in DB:
-		return jsonify([x[0] for x in DB[username]['lessons']])
+		return disable_cors(jsonify([x[0] for x in DB[username]['lessons']]))
 	else:
-		return jsonify([])
+		return disable_cors(jsonify([]))
 
 @app.route('/update', methods=['POST'])
 def update_problem():
