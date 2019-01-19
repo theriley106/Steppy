@@ -74,10 +74,35 @@ The database is a json file in the structure of:
 
 Returns:
 
-```json
+```javascript
 [
   "Multiplication",
   "Subtraction",
   ...
 ]
+```
+
+[POST] https://teamthomais.herokuapp.com/addNewProblem
+
+Returns:
+
+```json
+nothing w/ static code 204
+```
+
+
+[POST] https://teamthomais.herokuapp.com/add
+
+Update
+```javascript
+'problem_type': 'Mathematics',
+'param': 'description',
+'update': 'This is a new description'
+
+```
+
+Returns:
+
+```javascript
+nothing w/ static code 204
 ```
