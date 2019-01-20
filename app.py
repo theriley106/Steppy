@@ -1,11 +1,8 @@
 from flask import Flask, render_template, request, url_for, redirect, Markup, jsonify, make_response, send_from_directory, session
 import json
 import os
-from flask_cors import CORS, cross_origin
-app = Flask(__name__, static_url_path='/static')
-cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
 
+app = Flask(__name__, static_url_path='/static')
 
 DB_FILE = "database.json"
 BLANK_SCHEMA = "schema.json"
@@ -56,7 +53,6 @@ def index():
 	return render_template("index.html", params=PARAMETERS_IN_INFO)
 
 @app.route('/addNewProblem', methods=['POST'])
-@cross_origin()
 def add_problem():
 	temp_dict = {}
 	# Dictionary holding new problem information
@@ -79,23 +75,20 @@ def disable_cors(response):
 	return response
 
 @app.route("/users", methods=["GET"])
-@cross_origin()
 def get_users():
 	DB = json.load(open(DB_FILE))
-	return DB.keys()
+	return disable_cors(DB.keys())
 
 @app.route("/lessons/<username>", methods=["GET"])
-@cross_origin()
 def get_lessons(username):
 	username = username.lower()
 	DB = json.load(open(DB_FILE))
 	if username in DB:
-		return jsonify([x[0] for x in DB[username]['lessons']])
+		return disable_cors(jsonify([x[0] for x in DB[username]['lessons']]))
 	else:
-		return jsonify([])
+		return disable_cors(jsonify([]))
 
 @app.route('/update', methods=['POST'])
-@cross_origin()
 def update_problem():
 	problem_type = request.form.get('problem_type', None)
 	if problem_type != None:
