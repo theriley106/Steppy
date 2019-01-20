@@ -1,4 +1,7 @@
-[
+{
+    "thomais": {
+        "lessons": [
+        	[
   {
     "color1": "9C3CAB",
     "color2": "AB2567",
@@ -65,3 +68,6 @@
     "title": "Improper Fractions to Mixed Numbers"
   }
 ]
+        ]
+    }
+}
