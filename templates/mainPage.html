@@ -23,14 +23,20 @@
 }
 </style>
 
+<script src="{{ url_for('static', filename='js/jscolor.js') }}"></script>
+
 <script type = "text/javascript">
 var steps = 1;
 window.steps = steps;
 function test() {
         setTimeout(function() {
             document.getElementById("myDiv").style.display="none";
+            window.location.href = "https://steppy.netlify.com/";
         }, 3000);
-
+        var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance
+        xmlhttp.open("POST", "/addLesson");
+        xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xmlhttp.send(JSON.stringify($("#msform").serializeArray()));
     }
 
 function addAnother() {
@@ -40,9 +46,10 @@ function addAnother() {
   console.log(d2);
   console.log(c);
   d2.insertAdjacentHTML('afterend', `<h3 class="tmph fs-subtitle">This is step ` + c + `</h3>
-    <input type="text" name="email" class="tmpText" placeholder="Email" />
-    <input type="password" name="pass" class="tmpPass" placeholder="Password" />
-    <input id="myFieldset" class="myFieldset" type="password" name="cpass" placeholder="Confirm Password" />`);
+    <input type="text" name="email" placeholder="Example Image" />
+    <input name="pass1" placeholder="Step Image" />
+    <input name="pass2" class="tmpPass" placeholder="Example Description" />
+    <input id="myFieldset" class="myFieldset" name="cpass" placeholder="Example Image" />`);
 
 }
 
@@ -62,6 +69,10 @@ function removeStep() {
     d2.outerHTML = "";
   }
 }
+
+function setTextColor(picker) {
+    document.getElementsByTagName('body')[0].style.color = '#' + picker.toString()
+  }
     </script>
 
 
@@ -70,13 +81,15 @@ function removeStep() {
 <body>
 
 
+
+
   <!-- multistep form -->
-<form id="msform" action = "{{url_for('add_lesson') }}" method = "post">
+<form id="msform" name="theForm" action = "{{url_for('add_lesson') }}" method = "post">
   <!-- progressbar -->
   <ul id="progressbar">
     <li class="active">Lesson Details</li>
     <li>Steps</li>
-    <li>Examples</li>
+    <li>Process</li>
   </ul>
   <!-- fieldsets -->
 
@@ -84,7 +97,12 @@ function removeStep() {
     <h2 class="fs-title">Personal Details</h2>
     <h3 class="fs-subtitle"></h3>
     <input type="text" name="fname" placeholder="Lesson Name" />
-    <input type="text" name="lname" placeholder="Lesson Description" />
+
+Color Picker: <input name="2" class="jscolor" value="ab2567">
+<input name="3" class="jscolor" value="ab2567">
+
+
+
     <input type="button" name="next" class="next action-button" value="Next" runat="server" onsubmit="ShowLoading()"/>
 </div>
   </fieldset>
@@ -93,30 +111,23 @@ function removeStep() {
   <fieldset>
     <h2 class="fs-title">Add Steps</h2>
     <h3 class="fs-subtitle">This is step 1</h3>
-    <input type="text" name="email" placeholder="Email" />
-    <input type="password" name="pass" placeholder="Password" />
-    <input id="myFieldset" class="myFieldset" type="password" name="cpass" placeholder="Confirm Password" />
+    <input type="text" name="email" placeholder="Step Details" />
+    <input name="pass1" placeholder="Step Image" />
+    <input name="pass2" class="tmpPass" placeholder="Example Description" />
+    <input id="myFieldset" class="myFieldset" name="cpass" placeholder="Example Image" />
 
     <input type="button" name="addstep" value="Add Step" style="background-color: #008CBA;" class="action-button" onclick="addAnother();" />
     <input type="button" name="addstep" value="Remove Step" style="background-color: #f44336;" class="action-button" onclick="removeStep();" />
     <input type="button" name="previous" class="previous action-button" value="Previous" />
-    <input type="button" name="next" class="next action-button" value="Next"/>
+    <input type="button" name="next" class="next action-button" value="Publish" onclick="test()"//>
   </fieldset>
 
-  <fieldset>
-    <h2 class="fs-title">Authentications</h2>
-    <h3 class="fs-subtitle">Login information is encrypted using <br><a href='https://en.wikipedia.org/wiki/MD5'>MD5 Hashing</a></h3>
-    <input type="text" name="tctc" placeholder="TCTC Login" />
-    <input type="text" name="pass" placeholder="Password" />
-    <input type="button" name="previous" class="previous action-button" value="Previous" />
-    <input type="submit" name="next" class="next action-button" value="Authenticate" onclick="test()"/>
-  </fieldset>
   <fieldset>
       <div id = "myDiv"><img id = "myImage" src = "{{ url_for('static', filename='Spinner.gif') }}"></div><br>
   </fieldset>
 </form>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
 
 <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 
