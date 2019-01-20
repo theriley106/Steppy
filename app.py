@@ -1,7 +1,10 @@
 from flask import Flask, render_template, request, url_for, redirect, Markup, jsonify, make_response, send_from_directory, session
+
+from base64 import decodestring
 import json
 import os
 from flask_cors import CORS, cross_origin
+import random
 app = Flask(__name__, static_url_path='/static')
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
@@ -118,6 +121,24 @@ def update_problem():
 				with open(DB_FILE, 'w') as outfile:
 					json.dump(a, outfile, indent=4)
 	return ('', 204)
+
+@app.route('/addImage', methods=['POST'])
+@cross_origin()
+def add_image():
+	#print request.form
+	#print request.json
+	problem_type = request.json.get('image', None)
+	if problem_type != None:
+		fileType = problem_type.partition('/')[2].partition(';')[0]
+		g = []
+		for i in range(10):
+			g.append(str(random.randint(1,9)))
+		name = ''.join(g)
+		imagestr = problem_type.partition('base64,')[2]
+		with open("static/{}.{}".format(name, fileType),"wb") as f:
+			f.write(decodestring(imagestr))
+		return "static/{}.{}".format(name, fileType)
+	return "failed"
 
 @app.route('/addUser', methods=['POST'])
 def add_user():
