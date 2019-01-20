@@ -23,8 +23,8 @@ if os.path.exists(DB_FILE) == False:
 	os.system("echo {} >  " + DB_FILE)
 
 def create_db_backup():
-	a = glob.glob("backups/")
-	os.system("cp {} {}".format(DB_FILE, "backups/" + DB_FILE.partition(".")[0]+"{}_backup.json".format(len(a)+1)))
+	a = glob.glob("static/backups/")
+	os.system("cp {} {}".format(DB_FILE, "static/backups/" + DB_FILE.partition(".")[0]+"{}_backup.json".format(len(a)+1)))
 
 def add_problem_to_file(problemType, data):
 	# This means the field had text before submission
@@ -99,7 +99,19 @@ def delete():
 	a = json.load(open(DB_FILE))
 	returnPage = "<h1>Warning: Clicking any of these links will delete the lessons.  Use with care.</h1>"
 	for i, val in enumerate(a['thomais']['lessons']):
-		returnPage += '''<h2><a onclick="return confirm('Are you sure you want to delete this item?');" href="delete/{}'''.format(val[0]['id']) + '">Delete: {}</a></h2>'.format(val[0]['id'])
+		returnPage += '''<h2><a onclick="return confirm('Are you sure you want to delete this item?');" href="delete/{}'''.format(val[0]['id']) + '">Delete: {}</a></h2>'.format(val[0]['title'])
+	return returnPage
+
+@app.route('/backups', methods=['GET'])
+@cross_origin()
+def backups():
+	g = []
+	for val in glob.glob("static/backups/*"):
+		v = "static/" + val.partition("static/")[2]
+		g.append(v)
+	returnPage = "<h1>Backups</h1>"
+	for v in g:
+		returnPage += '''<h2><a href="{}'''.format(v) + '">Backup: {}</a></h2>'.format(v)
 	return returnPage
 
 @app.route('/delete/<task_id>', methods=['GET'])
