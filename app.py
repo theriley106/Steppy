@@ -137,8 +137,8 @@ def add_image():
 		imagestr = problem_type.partition('base64,')[2]
 		with open("static/{}.{}".format(name, fileType),"wb") as f:
 			f.write(decodestring(imagestr))
-		return "static/{}.{}".format(name, fileType)
-	return "failed"
+		return "https://teamthomais.herokuapp.com/static/{}.{}".format(name, fileType)
+	return "https://via.placeholder.com/140x100"
 
 @app.route('/addUser', methods=['POST'])
 def add_user():
