@@ -1,85 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<script type="text/javascript">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-function sendData(params){
-	var http = new XMLHttpRequest();
-	var url = 'addNewProblem';
-	var problem = document.getElementById("problem_type").value;
-	var paragraph = document.getElementById("values");
-	paragraph.innerHTML += problem + "<br>";
-	{% for param in params %}
-	 	params += "&{{param}}=" + document.getElementById("{{param}}").value;
-	 	document.getElementById("{{param}}").value = "";
-	{% endfor %}
-	if (problem.length > 0){
-		http.open('POST', url, true);
-
-		//Send the proper header information along with the request
-		http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-
-		http.onreadystatechange = function() {//Call a function when the state changes.
-		    if(http.readyState == 4 && http.status == 200) {
-		        alert(http.responseText);
-		    }
-		}
-		http.send(params);
-	}
-	return false;
-}
-
-function httpGet(theUrl)
-// The network request grabs the json containing mp3 structure
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
-}
-
-function addLinks(listOfVals){
-	var paragraph = document.getElementById("values");
-	paragraph.innerHTML = "";
-	for (var i = 0; i < obVal.length; i++) {
-		var problemType = obVal[i];
-    	paragraph.innerHTML += '<a href="guide/' + problemType + '">'+ problemType + '</a>' + "<br>";
-	}
-}
-
-function update(){
-	jsonString = httpGet("getGuideNames");
-	// This is the actual file structure
-	obVal = JSON.parse(jsonString);
-	// Converting string to json so we can interact with it
-	addLinks(obVal);
-
-
-}
-
-</script>
 </head>
 <body>
-<h1>Team Thomais</h1>
 
-<form onsubmit="return sendData();">
-{% for param in params %}
-  {{param}}: <input type="text" id="{{param}}"><br>
-{% endfor %}
-  <input type="submit" value="Submit">
-</form>
 
-<p id="values">
-</p>
 
-<footer>
-<script>
-update();
-window.setInterval(function(){
-  update();
-}, 2000);
-</script>
+<div class="container text-center">
+  <h3>Steppy</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <p>Current Project</p>
+    </div>
+    <div class="col-sm-4">
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
 </footer>
 
 </body>
