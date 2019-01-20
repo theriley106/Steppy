@@ -93,14 +93,38 @@ def get_users():
 	DB = json.load(open(DB_FILE))
 	return DB.keys()
 
+@app.route('/delete', methods=['GET'])
+@cross_origin()
+def delete():
+	a = json.load(open(DB_FILE))
+	returnPage = "<h1>Warning: Clicking any of these links will delete the lessons.  Use with care.</h1>"
+	for i, val in enumerate(a['thomais']['lessons']):
+		returnPage += '''<h2><a onclick="return confirm('Are you sure you want to delete this item?');" href="delete/{}'''.format(val[0]['id']) + '">Delete: {}</a></h2>'.format(val[0]['id'])
+	return returnPage
+
+@app.route('/delete/<task_id>', methods=['GET'])
+@cross_origin()
+def delete_single(task_id):
+	valz = False
+	create_db_backup()
+	a = json.load(open(DB_FILE))
+	for i, val in enumerate(a['thomais']['lessons']):
+		if str(val[0]['id']) == task_id:
+			del a['thomais']['lessons'][i]
+			valz = True
+	if valz == True:
+		with open(DB_FILE, 'w') as outfile:
+			json.dump(a, outfile, indent=4)
+	return redirect("https://steppy.netlify.com/", code=302)
+
 @app.route('/remove/<int:task_id>', methods=['DELETE'])
 @cross_origin()
 def delete_task(task_id):
 	val = False
 	create_db_backup()
 	a = json.load(open(DB_FILE))
-	for i, val in enumerate(a['thomais']['lessons']):
-		if val[0]['id'] == task_id:
+	for i, va in enumerate(a['thomais']['lessons']):
+		if va[0]['id'] == task_id:
 			del a['thomais']['lessons'][i]
 			val = True
 	if val == True:
