@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+{% for param in single_params %}
+  <center><h1>{{param}}: {{info[param]}}<br></h1></center>
+{% endfor %}
+
+{% for param in list_objects %}
+
+	{% for para in info[param] %}
+  		<center><h1>{{param}}: {{para}}<br></h1></center>
+  		{% endfor %}
+{% endfor %}
+<footer>
+</footer>
+
+</body>
+</html>

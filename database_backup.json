@@ -1,1 +1,33 @@
-{"Multiplication": {"additional_resources": [], "image_url": [], "problem_type": "Multiplication", "description": "A type of Math", "example": []}}
+{
+    "thomais": {
+        "lessons": [
+            [
+                {
+                    "color1": "string", 
+                    "color2": "string", 
+                    "steps": [
+                        {
+                            "step_description": "list", 
+                            "step_img": "string", 
+                            "example_img": "list", 
+                            "ex_description": "string"
+                        }, 
+                        {
+                            "step_description": "list", 
+                            "step_img": "string", 
+                            "example_img": "list", 
+                            "ex_description": "string"
+                        }, 
+                        {
+                            "step_description": "list", 
+                            "step_img": "string", 
+                            "example_img": "list", 
+                            "ex_description": "string"
+                        }
+                    ], 
+                    "title": "string"
+                }
+            ]
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{"lessons": [
+    {
+        "title": "string",
+        "color1": "string",
+        "color2": "string",
+        "steps": [
+            {
+                "step_description":"list",
+                "step_img":"string",
+                "example_img":"list",
+                "ex_description":"string"
+            },
+            {
+                "step_description":"list",
+                "step_img":"string",
+                "example_img":"list",
+                "ex_description":"string"
+            },
+            {
+                "step_description":"list",
+                "step_img":"string",
+                "example_img":"list",
+                "ex_description":"string"
+            }
+
+        ]
+
+    }
+]}

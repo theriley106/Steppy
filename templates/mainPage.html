@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<style>
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+</style>
+
+<script type = "text/javascript">
+var steps = 1;
+window.steps = steps;
+function test() {
+        setTimeout(function() {
+            document.getElementById("myDiv").style.display="none";
+        }, 3000);
+
+    }
+
+function addAnother() {
+  var d1 = document.getElementsByClassName('myFieldset');
+  c = d1.length+1;
+  var d2 = d1[d1.length-1];
+  console.log(d2);
+  console.log(c);
+  d2.insertAdjacentHTML('afterend', `<h3 class="tmph fs-subtitle">This is step ` + c + `</h3>
+    <input type="text" name="email" class="tmpText" placeholder="Email" />
+    <input type="password" name="pass" class="tmpPass" placeholder="Password" />
+    <input id="myFieldset" class="myFieldset" type="password" name="cpass" placeholder="Confirm Password" />`);
+
+}
+
+function removeStep() {
+  var d1 = document.getElementsByClassName('myFieldset');
+  if (d1.length > 1){
+    var d2 = d1[d1.length-1];
+    d2.outerHTML = "";
+    var d1 = document.getElementsByClassName('tmpPass');
+    var d2 = d1[d1.length-1];
+    d2.outerHTML = "";
+    var d1 = document.getElementsByClassName('tmpText');
+    var d2 = d1[d1.length-1];
+    d2.outerHTML = "";
+    var d1 = document.getElementsByClassName('tmph');
+    var d2 = d1[d1.length-1];
+    d2.outerHTML = "";
+  }
+}
+    </script>
+
+
+</head>
+
+<body>
+
+
+  <!-- multistep form -->
+<form id="msform" action = "{{url_for('add_lesson') }}" method = "post">
+  <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active">Lesson Details</li>
+    <li>Steps</li>
+    <li>Examples</li>
+  </ul>
+  <!-- fieldsets -->
+
+  <fieldset>
+    <h2 class="fs-title">Personal Details</h2>
+    <h3 class="fs-subtitle"></h3>
+    <input type="text" name="fname" placeholder="Lesson Name" />
+    <input type="text" name="lname" placeholder="Lesson Description" />
+    <input type="button" name="next" class="next action-button" value="Next" runat="server" onsubmit="ShowLoading()"/>
+</div>
+  </fieldset>
+
+
+  <fieldset>
+    <h2 class="fs-title">Add Steps</h2>
+    <h3 class="fs-subtitle">This is step 1</h3>
+    <input type="text" name="email" placeholder="Email" />
+    <input type="password" name="pass" placeholder="Password" />
+    <input id="myFieldset" class="myFieldset" type="password" name="cpass" placeholder="Confirm Password" />
+
+    <input type="button" name="addstep" value="Add Step" style="background-color: #008CBA;" class="action-button" onclick="addAnother();" />
+    <input type="button" name="addstep" value="Remove Step" style="background-color: #f44336;" class="action-button" onclick="removeStep();" />
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next"/>
+  </fieldset>
+
+  <fieldset>
+    <h2 class="fs-title">Authentications</h2>
+    <h3 class="fs-subtitle">Login information is encrypted using <br><a href='https://en.wikipedia.org/wiki/MD5'>MD5 Hashing</a></h3>
+    <input type="text" name="tctc" placeholder="TCTC Login" />
+    <input type="text" name="pass" placeholder="Password" />
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="submit" name="next" class="next action-button" value="Authenticate" onclick="test()"/>
+  </fieldset>
+  <fieldset>
+      <div id = "myDiv"><img id = "myImage" src = "{{ url_for('static', filename='Spinner.gif') }}"></div><br>
+  </fieldset>
+</form>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+</body>
+</html>

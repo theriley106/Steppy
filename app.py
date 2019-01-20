@@ -55,6 +55,10 @@ def get_problem_type_info(problemType):
 def index():
 	return render_template("index.html", params=PARAMETERS_IN_INFO)
 
+@app.route('/test', methods=['GET'])
+def indexTest():
+	return render_template("mainPage.html")
+
 @app.route('/addNewProblem', methods=['POST'])
 @cross_origin()
 def add_problem():

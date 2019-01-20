@@ -90,6 +90,20 @@ Returns:
 nothing w/ static code 204
 ```
 
+[POST] https://teamthomais.herokuapp.com/addUser
+
+Update
+```javascript
+'username': 'thomais'
+```
+
+Returns:
+
+```javascript
+nothing w/ static code 204
+```
+
+
 
 [POST] https://teamthomais.herokuapp.com/add
 
@@ -106,3 +120,5 @@ Returns:
 ```javascript
 nothing w/ static code 204
 ```
+
+##### New API Endpoitns
