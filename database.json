@@ -1,6 +1,67 @@
-{
-    "thomais": {
-        "lessons": [
-        ]
-    }
-}
+[
+  {
+    "color1": "9C3CAB",
+    "color2": "AB2567",
+    "id": 1,
+    "steps": [
+      {
+        "ex_description": "Here the whole number is 4.",
+        "example_img": "https://teamthomais.herokuapp.com/static/9323445758.png",
+        "step_description": "Put the whole number over 1 to make it a fraction.",
+        "step_img": "https://teamthomais.herokuapp.com/static/2482919548.png",
+        "step_index": 0
+      },
+      {
+        "ex_description": "Put 4 times 1 over 1 times 2.",
+        "example_img": "https://teamthomais.herokuapp.com/static/3811623451.png",
+        "step_description": "Multiply across - top times top and bottom times bottom.",
+        "step_img": "https://teamthomais.herokuapp.com/static/3271265683.png",
+        "step_index": 1
+      },
+      {
+        "ex_description": "We can get rid of the 1 in the denominator.",
+        "example_img": "https://teamthomais.herokuapp.com/static/1127435518.png",
+        "step_description": "Reduce to simplest form.",
+        "step_img": "https://teamthomais.herokuapp.com/static/7537461179.png",
+        "step_index": 2
+      }
+    ],
+    "title": "Multiply whole numbers by fractions"
+  },
+  {
+    "color1": "54AB5D",
+    "color2": "4BCDD1",
+    "id": 2,
+    "steps": [
+      {
+        "ex_description": "We get 2 with remainder 3 as a result.",
+        "example_img": "https://teamthomais.herokuapp.com/static/8261824188.png",
+        "step_description": "Divide the numerator by the denominator. Or you can say divide the top number by the bottom number (the numerator will be your dividend and the denominator will be your divisor.).",
+        "step_img": "https://teamthomais.herokuapp.com/static/8371651818.png",
+        "step_index": 0
+      },
+      {
+        "ex_description": "Here we got 2 previously, so that is the whole number.",
+        "example_img": "https://teamthomais.herokuapp.com/static/7455152356.png",
+        "step_description": "Your quotient will be your whole number (your new big number).",
+        "step_img": "https://teamthomais.herokuapp.com/static/6791513482.png",
+        "step_index": 1
+      },
+      {
+        "ex_description": "We had remainder 3 so that is the numerator.",
+        "example_img": "https://teamthomais.herokuapp.com/static/5472558698.png",
+        "step_description": "Make the remainder your new numerator.",
+        "step_img": "https://teamthomais.herokuapp.com/static/7319982744.png",
+        "step_index": 2
+      },
+      {
+        "ex_description": "We put 4 in the denominator. ",
+        "example_img": "https://teamthomais.herokuapp.com/static/3852817665.png",
+        "step_description": "Your denominator stays the same.",
+        "step_img": "https://teamthomais.herokuapp.com/static/9399732615.png",
+        "step_index": 3
+      }
+    ],
+    "title": "Improper Fractions to Mixed Numbers"
+  }
+]
