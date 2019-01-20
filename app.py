@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, url_for, redirect, Markup, js
 from base64 import decodestring
 import json
 import os
+import glob
 from flask_cors import CORS, cross_origin
 import random
 app = Flask(__name__, static_url_path='/static')
@@ -22,7 +23,8 @@ if os.path.exists(DB_FILE) == False:
 	os.system("echo {} >  " + DB_FILE)
 
 def create_db_backup():
-	os.system("cp {} {}".format(DB_FILE, DB_FILE.partition(".")[0]+"_backup.json"))
+	a = glob.glob("backups/")
+	os.system("cp {} {}".format(DB_FILE, "backups/" + DB_FILE.partition(".")[0]+"{}_backup.json".format(len(a)+1)))
 
 def add_problem_to_file(problemType, data):
 	# This means the field had text before submission
@@ -90,6 +92,21 @@ def disable_cors(response):
 def get_users():
 	DB = json.load(open(DB_FILE))
 	return DB.keys()
+
+@app.route('/remove/<int:task_id>', methods=['DELETE'])
+@cross_origin()
+def delete_task(task_id):
+	val = False
+	create_db_backup()
+	a = json.load(open(DB_FILE))
+	for i, val in enumerate(a['thomais']['lessons']):
+		if val[0]['id'] == task_id:
+			del a['thomais']['lessons'][i]
+			val = True
+	if val == True:
+		with open(DB_FILE, 'w') as outfile:
+			json.dump(a, outfile, indent=4)
+	return jsonify({'result': val})
 
 @app.route("/lessons/<username>", methods=["GET"])
 @cross_origin()
