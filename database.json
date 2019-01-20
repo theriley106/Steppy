@@ -3,63 +3,143 @@
         "lessons": [
             [
                 {
-                    "color1": "string",
-                    "color2": "string",
+                    "color1": "#C0C0C0",
+                    "color2": "#808080",
                     "steps": [
                         {
-                        	"step_index": 0,
-                            "step_description": "list",
-                            "step_img": "string",
-                            "example_img": "list",
-                            "ex_description": "string"
-                        },
-                        {
-                        	"step_index": 1,
-                            "step_description": "list",
-                            "step_img": "string",
-                            "example_img": "list",
-                            "ex_description": "string"
-                        },
-                        {
-                        	"step_index": 2,
-                            "step_description": "list",
-                            "step_img": "string",
-                            "example_img": "list",
-                            "ex_description": "string"
-                        }
+		                    "step_index": 0,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                },
+		                {
+		                    "step_index": 1,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                },
+		                {
+		                    "step_index": 2,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                },
+		                {
+		                    "step_index": 3,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                }
                     ],
-                    "title": "string",
+                    "title": "Mathematics",
                     "id": 1
                 }
             ],
             [
                 {
-                    "color1": "string",
-                    "color2": "string",
+                    "color1": "#C0C0C0",
+                    "color2": "#808080",
                     "steps": [
                         {
-                        	"step_index": 0,
-                            "step_description": "list",
-                            "step_img": "string",
-                            "example_img": "list",
-                            "ex_description": "string"
-                        },
-                        {
-                        	"step_index": 1,
-                            "step_description": "list",
-                            "step_img": "string",
-                            "example_img": "list",
-                            "ex_description": "string"
-                        },
-                        {
-                        	"step_index": 2,
-                            "step_description": "list",
-                            "step_img": "string",
-                            "example_img": "list",
-                            "ex_description": "string"
-                        }
+		                    "step_index": 0,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                },
+		                {
+		                    "step_index": 1,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                },
+		                {
+		                    "step_index": 2,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                },
+		                {
+		                    "step_index": 3,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                }
                     ],
-                    "title": "string",
+                    "title": "Subtraction",
+                    "id": 3
+                }
+            ],
+            [
+                {
+                    "color1": "#808080",
+                    "color2": "#C0C0C0",
+                    "steps": [
+                        {
+		                    "step_index": 0,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                },
+		                {
+		                    "step_index": 1,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                },
+		                {
+		                    "step_index": 2,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                },
+		                {
+		                    "step_index": 3,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                },
+		                {
+		                    "step_index": 4,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                },
+		                {
+		                    "step_index": 5,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                },
+		                {
+		                    "step_index": 6,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                },
+		                {
+		                    "step_index": 7,
+		                    "step_description":"list",
+		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
+		                    "ex_description":"string",
+		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
+		                }
+                    ],
+                    "title": "Fractions",
                     "id": 2
                 }
             ]
