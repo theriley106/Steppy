@@ -1,148 +1,296 @@
+
 {
     "thomais": {
         "lessons": [
             [
                 {
-                    "color1": "#C0C0C0",
-                    "color2": "#808080",
+                    "color1": "#bada55",
+                    "color2": "#c2c1e1",
                     "steps": [
                         {
-		                    "step_index": 0,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                },
-		                {
-		                    "step_index": 1,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                },
-		                {
-		                    "step_index": 2,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                },
-		                {
-		                    "step_index": 3,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                }
+                            "step_description": "STEP 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/450x450/00ffff/282828",
+                            "step_index": 0,
+                            "ex_description": "EXAMPLE 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/450x450/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 1,
+                            "ex_description": "EXAMPLE 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 2,
+                            "ex_description": "EXAMPLE 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/350x350/00ffff/282828",
+                            "step_index": 3,
+                            "ex_description": "EXAMPLE 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/250x250/00ffff/282828"
+                        }
                     ],
-                    "title": "Mathematics",
-                    "id": 1
+                    "id": 1,
+                    "title": "Mathematics"
                 }
             ],
             [
                 {
-                    "color1": "#C0C0C0",
+                    "color1": "#c2c1e1",
                     "color2": "#808080",
                     "steps": [
                         {
-		                    "step_index": 0,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                },
-		                {
-		                    "step_index": 1,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                },
-		                {
-		                    "step_index": 2,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                },
-		                {
-		                    "step_index": 3,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                }
+                            "step_description": "STEP 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/350x350/00ffff/282828",
+                            "step_index": 0,
+                            "ex_description": "EXAMPLE 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/250x250/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/350x350/00ffff/282828",
+                            "step_index": 1,
+                            "ex_description": "EXAMPLE 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/250x250/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/350x350/00ffff/282828",
+                            "step_index": 2,
+                            "ex_description": "EXAMPLE 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/250x250/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/350x350/00ffff/282828",
+                            "step_index": 3,
+                            "ex_description": "EXAMPLE 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/250x250/00ffff/282828"
+                        }
                     ],
-                    "title": "Subtraction",
-                    "id": 3
+                    "id": 3,
+                    "title": "Subtraction"
                 }
             ],
             [
                 {
-                    "color1": "#808080",
+                    "color1": "#b2e4df",
                     "color2": "#C0C0C0",
                     "steps": [
                         {
-		                    "step_index": 0,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                },
-		                {
-		                    "step_index": 1,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                },
-		                {
-		                    "step_index": 2,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                },
-		                {
-		                    "step_index": 3,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                },
-		                {
-		                    "step_index": 4,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                },
-		                {
-		                    "step_index": 5,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                },
-		                {
-		                    "step_index": 6,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                },
-		                {
-		                    "step_index": 7,
-		                    "step_description":"list",
-		                    "step_img":"https://placehold.it/50x50/00ffff/282828",
-		                    "ex_description":"string",
-		                    "example_img":"https://placehold.it/50x50/00ffff/282828"
-		                }
+                            "step_description": "STEP 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/350x350/00ffff/282828",
+                            "step_index": 0,
+                            "ex_description": "EXAMPLE 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/250x250/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 1,
+                            "ex_description": "EXAMPLE 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 2,
+                            "ex_description": "EXAMPLE 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 3,
+                            "ex_description": "EXAMPLE 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 4,
+                            "ex_description": "EXAMPLE 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 6: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 5,
+                            "ex_description": "EXAMPLE 6: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 7: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 6,
+                            "ex_description": "EXAMPLE 7: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 8: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 7,
+                            "ex_description": "EXAMPLE 8: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        }
                     ],
-                    "title": "Fractions",
-                    "id": 2
+                    "id": 2,
+                    "title": "Fractions"
                 }
             ]
         ]
-    }
+}
+}{
+    "thomais": {
+        "lessons": [
+            [
+                {
+                    "color1": "#bada55",
+                    "color2": "#c2c1e1",
+                    "steps": [
+                        {
+                            "step_description": "STEP 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/450x450/00ffff/282828",
+                            "step_index": 0,
+                            "ex_description": "EXAMPLE 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/450x450/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 1,
+                            "ex_description": "EXAMPLE 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 2,
+                            "ex_description": "EXAMPLE 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/350x350/00ffff/282828",
+                            "step_index": 3,
+                            "ex_description": "EXAMPLE 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/250x250/00ffff/282828"
+                        }
+                    ],
+                    "id": 1,
+                    "title": "Mathematics"
+                }
+            ],
+            [
+                {
+                    "color1": "#c2c1e1",
+                    "color2": "#808080",
+                    "steps": [
+                        {
+                            "step_description": "STEP 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/350x350/00ffff/282828",
+                            "step_index": 0,
+                            "ex_description": "EXAMPLE 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/250x250/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/350x350/00ffff/282828",
+                            "step_index": 1,
+                            "ex_description": "EXAMPLE 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/250x250/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/350x350/00ffff/282828",
+                            "step_index": 2,
+                            "ex_description": "EXAMPLE 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/250x250/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/350x350/00ffff/282828",
+                            "step_index": 3,
+                            "ex_description": "EXAMPLE 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/250x250/00ffff/282828"
+                        }
+                    ],
+                    "id": 3,
+                    "title": "Subtraction"
+                }
+            ],
+            [
+                {
+                    "color1": "#b2e4df",
+                    "color2": "#C0C0C0",
+                    "steps": [
+                        {
+                            "step_description": "STEP 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/350x350/00ffff/282828",
+                            "step_index": 0,
+                            "ex_description": "EXAMPLE 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/250x250/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 1,
+                            "ex_description": "EXAMPLE 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 2,
+                            "ex_description": "EXAMPLE 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 3,
+                            "ex_description": "EXAMPLE 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 4,
+                            "ex_description": "EXAMPLE 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 6: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 5,
+                            "ex_description": "EXAMPLE 6: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 7: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 6,
+                            "ex_description": "EXAMPLE 7: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        },
+                        {
+                            "step_description": "STEP 8: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "step_img": "https://placehold.it/50x50/00ffff/282828",
+                            "step_index": 7,
+                            "ex_description": "EXAMPLE 8: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl eros, maximus at arcu et, ornare tincidunt dolor. Curabitur quis odio gravida, auctor nunc id, blandit lectus. Cras eget tortor eros. Vestibulum sed ullamcorper urna. Aenean non sem tincidunt, euismod dui non, hendrerit lorem. Fusce ut euismod quam. Donec vehicula justo nec nunc tristique tincidunt. Aliquam tortor nibh, sollicitudin sed arcu a, lobortis tempor massa.",
+                            "example_img": "https://placehold.it/50x50/00ffff/282828"
+                        }
+                    ],
+                    "id": 2,
+                    "title": "Fractions"
+                }
+            ]
+        ]
+}
 }
