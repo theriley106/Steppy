@@ -56,7 +56,7 @@ def get_problem_type_info(problemType):
 
 @app.route('/', methods=['GET'])
 def index():
-	return render_template("index.html", params=PARAMETERS_IN_INFO)
+	return redirect("https://steppy.netlify.com/", code=302)
 
 @app.route('/admin', methods=['GET'])
 def indexTest():
