@@ -132,14 +132,29 @@ def add_user():
 
 @app.route('/addLesson', methods=['POST'])
 def add_lesson():
-	allData = request.json
-	username = allData.get('userName', None)
 	info = {}
-	if username != None and 'lessons' in allData:
+	username = "thomais"
+	allData = request.json
+	print len(allData)
+	info['title'] = allData.pop(0)['value']
+	info['color1'] = allData.pop(0)['value']
+	info['color2'] = allData.pop(0)['value']
+	#info['color2'] = allData.pop(0)
+	info['steps'] = []
+	indexVal = 0
+	while len(allData) > 0:
+		info['steps'].append({"step_index": indexVal, "step_description": allData.pop(0)['value'], "step_img": allData.pop(0)['value'], "ex_description": allData.pop(0)['value'], "example_img": allData.pop(0)['value']})
+		indexVal += 1
+	if username != None:
 		create_db_backup()
 		a = json.load(open(DB_FILE))
 		if username in a:
-			a[username]['lessons'].append(allData['lessons'])
+			maxNum = 0
+			for val in a[username]['lessons']:
+				if val[0]['id'] > maxNum:
+					maxNum = val[0]['id']
+			info['id'] = maxNum + 1
+			a[username]['lessons'].append([info])
 			with open(DB_FILE, 'w') as outfile:
 				json.dump(a, outfile, indent=4)
 	return ('', 204)
