@@ -1,7 +1,13 @@
 import boto3
+try:
+	from keys import *
+except:
+	ACCESS_KEY = raw_input("ACCESS KEY: ")
+	SECRET_KEY = raw_input("SECRET KEY: ")
+
 session = boto3.Session(
-    aws_access_key_id="AKIAIZOLPEVSQKIYH4JQ",
-    aws_secret_access_key="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",
+    aws_access_key_id=ACCESS_KEY,
+    aws_secret_access_key=SECRET_KEY,
 )
 
 
